@@ -1,3 +1,2 @@
-Hello, World! 
-new version
+*просто прикольная надпись*
 
