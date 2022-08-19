@@ -19,12 +19,12 @@ pipeline{
             parallel{
                 stage('Deploy to local'){
                     steps{
-                        sh "cp **/target/*.war /home/dima/Загрузки/tomcat-local/webapps
+                        sh "cp **/target/*.war /home/dima/Загрузки/tomcat-local/webapps"
                     }
                 }
                 stage('Deplot to prod'){
                     steps{
-                        sh "cp **/target/*.war /home/dima/Загрузки/tomcat-prod/webapps
+                        sh "cp **/target/*.war /home/dima/Загрузки/tomcat-prod/webapps"
                     }
                 }
             }
