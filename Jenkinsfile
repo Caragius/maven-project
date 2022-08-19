@@ -15,7 +15,7 @@ pipeline{
                 }
             }
         }
-        stage('Deployments')
+        stage('Deployments'){
             parallel{
                 stage('Deploy to local'){
                     steps{
