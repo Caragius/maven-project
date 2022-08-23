@@ -1,7 +1,3 @@
-#!groovy
-
-//properties([disableConcurentBuilds()])
-
 pipeline{
     agent any
     options{
@@ -12,6 +8,11 @@ pipeline{
         stage("First"){
             steps{
                 sh "echo \'Hello\'"
+            }
+        }
+        stage("second"){
+            steps{
+                sh "echo \'world\'"
             }
         }
     }
